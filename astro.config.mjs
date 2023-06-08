@@ -6,6 +6,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Starwoof',
+      tableOfContents: false,
       social: {
         github: 'https://github.com/withastro/starlight',
       },
