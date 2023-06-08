@@ -5,23 +5,30 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   integrations: [
     starlight({
-      title: 'My Docs',
+      title: 'Starwoof',
       social: {
         github: 'https://github.com/withastro/starlight',
       },
+      customCss: [
+        '@fontsource/atkinson-hyperlegible',
+        '/src/fonts.css'
+      ],
+      locales: {
+        root: {
+          lang: 'en',
+          label: 'English',
+        },
+        es: {
+          lang: 'es',
+          label: 'Español',
+        }
+      },
       sidebar: [
         {
-          label: 'Guides',
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: 'Example Guide', link: '/guides/example/' },
-          ],
-        },
-        {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
-        },
-      ],
+          label: 'Pets',
+          autogenerate: { directory: 'pets' },
+        }
+      ]
     }),
   ],
 });

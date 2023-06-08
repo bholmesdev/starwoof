@@ -1,0 +1,8 @@
+img {
+  margin: 0;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+article.card {
+  padding: 1rem;
+}
