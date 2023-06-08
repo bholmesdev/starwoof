@@ -8,6 +8,9 @@ dependencies:
   '@astrojs/starlight':
     specifier: ^0.1.0
     version: 0.1.0(astro@2.5.0)
+  '@fontsource/atkinson-hyperlegible':
+    specifier: ^5.0.2
+    version: 5.0.2
   astro:
     specifier: ^2.5.0
     version: 2.5.0
@@ -599,6 +602,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/atkinson-hyperlegible@5.0.2:
+    resolution: {integrity: sha512-mo83n2liPTNy7AooPSQfsnV7390L5vaTC4j4YyXu6jQdnDQY3HkmyJqvLYR730NJOhD3wNWnUaPGjmQ72BTVuA==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
