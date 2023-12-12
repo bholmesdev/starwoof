@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/starlight": "^0.15.0",
     "@astrojs/starlight-docsearch": "^0.1.0",
+    "@astrojs/vercel": "^6.0.2",
     "@fontsource/atkinson-hyperlegible": "^5.0.2",
     "astro": "^4.0.4",
     "vite": "^5.0.7"

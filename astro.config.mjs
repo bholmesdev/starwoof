@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import starlightDocSearch from "@astrojs/starlight-docsearch";
 import starlight from "@astrojs/starlight";
 import { loadEnv } from "vite";
-
+import vercel from "@astrojs/vercel/static";
 const env = loadEnv("", process.cwd(), "ALGOLIA");
 
 // https://astro.build/config
@@ -35,9 +35,12 @@ export default defineConfig({
       sidebar: [
         {
           label: "Pets",
-          autogenerate: { directory: "pets" },
+          autogenerate: {
+            directory: "pets",
+          },
         },
       ],
     }),
   ],
+  adapter: vercel(),
 });
