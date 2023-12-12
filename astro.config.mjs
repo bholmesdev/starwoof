@@ -7,9 +7,13 @@ const env = loadEnv("", process.cwd(), "ALGOLIA");
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://starwoof.vercel.app",
   integrations: [
     starlight({
       title: "Starwoof",
+      social: {
+        github: "https://github.com/bholmesdev/starwoof",
+      },
       tableOfContents: false,
       plugins: [
         starlightDocSearch({
@@ -18,9 +22,6 @@ export default defineConfig({
           indexName: env.ALGOLIA_INDEX_NAME,
         }),
       ],
-      social: {
-        github: "https://github.com/withastro/starlight",
-      },
       customCss: ["@fontsource/atkinson-hyperlegible", "/src/fonts.css"],
       locales: {
         root: {
